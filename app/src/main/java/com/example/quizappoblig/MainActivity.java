@@ -14,18 +14,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void databaseView (View View) {
+    public void toList (View View) {
         Intent i = new Intent (this, Database.class);
         startActivity(i);
     }
 
-    //public void quizView (View View) {
-    //    Intent i = new Intent (this, Quiz.class);
-    //    startActivity(i);
-    //}
+    public void toQuiz (View View) {
+        Intent i = new Intent (this, Quiz.class);
+        startActivity(i);
+    }
 
-    //public void addcatView (View View) {
-    //    Intent i = new Intent (this, Addcat.class);
-    //    startActivity(i);
-    //}
+    public void toAdd    (View View) {
+        Intent i = new Intent (this, Addcat.class);
+        startActivity(i);
+    }
+
+
+
+
 }

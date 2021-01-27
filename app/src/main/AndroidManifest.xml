@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizAppOblig">
-        <activity android:name=".Database"></activity>
+        <activity android:name=".Addcat"></activity>
+        <activity android:name=".Quiz" />
+        <activity android:name=".Database" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

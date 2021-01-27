@@ -7,29 +7,30 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/buttonList"
+        android:id="@+id/listButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="databaseView"
-        android:text="Cat List"
-        tools:layout_editor_absoluteX="203dp"
-        tools:layout_editor_absoluteY="61dp" />
+        android:onClick="toList"
+        android:text="CAT LIST"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="215dp" />
 
     <Button
-        android:id="@+id/buttonQuiz"
+        android:id="@+id/quizButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="quizView"
-        android:text="Quiz"
-        tools:layout_editor_absoluteX="203dp"
-        tools:layout_editor_absoluteY="190dp" />
+        android:onClick="toQuiz"
+        android:text="QUIZ"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="309dp" />
 
     <Button
-        android:id="@+id/buttonAdd"
+        android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="addcatView"
-        android:text="Add cat"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="319dp" />
+        android:onClick="deleteCat"
+        android:text="ADD CAT"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="395dp" />
+
 </LinearLayout>
