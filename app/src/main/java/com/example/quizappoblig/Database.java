@@ -37,8 +37,10 @@ public class Database extends AppCompatActivity {
         catList.add(new CatObject("Sphynx", R.drawable.sphynx));
     }
 
-    public ArrayList<CatObject> getCatList() {
-        return catList;
+    public void addCat(View view) {
+        String newCatName = getResources().getResourceEntryName(R.id.editCatName);
+
+        catList.add(new CatObject(newCatName, R.id.newCat));
     }
 
 }

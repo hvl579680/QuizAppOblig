@@ -4,12 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:gravity="center_horizontal|center_vertical"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/listButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:onClick="toList"
         android:text="CAT LIST"
         tools:layout_editor_absoluteX="99dp"
@@ -19,6 +23,7 @@
         android:id="@+id/quizButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:onClick="toQuiz"
         android:text="QUIZ"
         tools:layout_editor_absoluteX="97dp"
@@ -28,7 +33,8 @@
         android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="deleteCat"
+        android:layout_margin="20dp"
+        android:onClick="toAdd"
         android:text="ADD CAT"
         tools:layout_editor_absoluteX="87dp"
         tools:layout_editor_absoluteY="395dp" />

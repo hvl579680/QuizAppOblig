@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void toAdd    (View View) {
+    public void toAdd (View View) {
         Intent i = new Intent (this, Addcat.class);
         startActivity(i);
     }
