@@ -9,10 +9,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Addcat extends AppCompatActivity {
 
@@ -45,6 +47,24 @@ public class Addcat extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    public void addCat (View View) {
+        Database database = new Database();
+        ArrayList<CatObject> catList = database.getCatList();
+
+        //finding new name
+        EditText mEdit = (EditText) findViewById(R.id.catNameInput);
+        String newCatName = mEdit.getText().toString();
+
+        catList.add(new CatObject(newCatName, R.id.newCat));
+        database.setCatList(catList);
+
+        //test
+        System.out.println(catList.get(3).getCatName());
+
+        Intent i = new Intent(this, Database.class);
+        startActivity(i);
     }
 
 
